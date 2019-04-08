@@ -1,0 +1,236 @@
+/* Import fonts first */
+/* more fonts at https://fonts.google.com */
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,700|Roboto:300,400,700|IBM+Plex+Serif:300,400,700|Montserrat:300,400,700');
+
+/* page style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size:16px;
+}
+
+.container {
+  margin:0;
+}
+
+.fullscreen {}
+
+.sketch {
+  margin:0;
+  margin-bottom:50px;
+  text-align:center;
+  padding: 20px;
+}
+
+/* archive header */
+.h-block {
+  margin:auto;
+  margin-top:200px;
+  text-align:center;
+}
+
+.h-block h1 {
+  color:rgb(0,0,0,1);
+  font-size: 8.0vmin;
+  line-height: 1.25em;
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 100;
+  margin:0;
+  padding:0;
+}
+
+/* archive content*/
+.txt-block {
+  width: 40%;
+
+  margin:auto;
+  margin-top:100px;
+  margin-bottom:50px;
+}
+
+.txt-block h2 {
+  color: rgb(0,0,0,1);
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  display:inline-block;
+  padding-bottom:10px;
+  border-bottom: solid 1px black;
+}
+
+.txt-block p {
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-size: 1.2em;
+  line-height:1.5em;
+}
+
+.img-full {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.img-block {
+  width:90%;
+  margin:auto;
+}
+
+.img-block figure {
+  display: inline-block;
+  width:32%;
+  margin-bottom:40px;
+}
+
+.img-block figure img {
+  padding:20px;
+  width:80%;
+}
+
+.img-block figure figcaption {
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-size:0.9em;
+  padding:0 20px;
+  width:80%;
+  text-align:left;
+}
+
+
+/* header menu */
+
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:transparent;
+  width:100%;
+  padding:10px;
+  text-align: center;
+  z-index:1000;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin:auto;
+}
+
+ul.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+ul.menu li a {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 1.5vmin;
+  font-weight: 400;
+  letter-spacing:2px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,1);
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+ul.menu li a:hover {
+  color: rgba(0,0,0,1);
+  border-bottom: 3px solid rgba(0,0,0,1);
+}
+
+/* footer */
+
+footer {
+  clear: both;
+  margin:0;
+  height:100px;
+  padding:4% 20%;
+  background-color: rgb(255,255,255,1);
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color:#333;
+  line-height:1.25em;
+  text-align:center;
+  padding-top:20px;
+  border-top:1px solid #000;
+}
+
+/* index / landing page */
+.landing {
+  width:100%;
+  height:100vh;
+  background-image: url(../assets/vcc-9.png);
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-size: cover;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.landing .overlay {
+  position:absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  z-index:100;
+  background-image: transparent;
+}
+
+.landing .overlay h2 {
+  font-size: 16vmin;
+  line-height: 1em;
+  font-family: 'IBM Plex Serif', sans-serif;
+  font-weight:700;
+  text-transform: uppercase;
+  color:rgb(0,0,0,1);
+  width:100%;
+  padding:0 10%;
+  height:100vh;
+  text-align: center;
+  display:table-cell;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+#down {
+ position: absolute;
+ top:85vh;
+ padding: 20px;
+ font-size: 2.5em;
+ z-index:1200;
+}
+
+#down:hover {
+ cursor: pointer;
+ background-color: #eee;
+ opacity: 0.8;
+}
+
+.project-info {
+  padding:100px 2%;
+  width:95%;
+  margin: auto;
+}
+
+.project-info h2, .project-info p, .project-info p a {
+  font-size: 4.0vmin;
+  line-height: 1.25em;
+  text-align:left;
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 100;
+  color:rgb(0,0,0,1);
+  margin-top:1.0em;
+}
+.project-info h2 {
+  font-size: 3.0vmin;
+  font-weight: 700;
+}
+.project-info p a {
+  text-decoration: none;
+  border-bottom:black solid 1px;
+}

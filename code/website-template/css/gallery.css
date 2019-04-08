@@ -1,0 +1,63 @@
+div.gallery-container {
+    margin: auto;
+    max-width:1280px;
+    margin-top:15%;
+}
+
+div.img-block {
+  width:50%;
+  float:left;
+  text-align:center;
+  margin-bottom:10%;
+
+}
+
+div.img-block p {
+  margin-top:20px;
+  line-height: 1.25em;
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 100;
+  color:rgb(0,0,0,1);
+}
+
+div.img-block img {
+  vertical-align: middle;
+  display: inline;
+  width:80%;
+}
+
+div.img-block img.img-half {
+  width:50%;
+}
+
+div.img-block-full {
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+    margin-bottom:10%;
+}
+
+
+div.img-block-full img {
+  display: inline;
+  width:50%;
+}
+
+
+div.img-block img:hover {
+  -moz-box-shadow: 20px 20px 30px rgb(0,0,0,0.4);
+	-webkit-box-shadow: 20px 20px 30px rgb(0,0,0,0.4);
+	box-shadow: 20px 20px 30px rgb(0,0,0,0.4);
+
+    transform: scale(1.4, 1.4);
+}
+
+div.img-block img {
+  -moz-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+div.img-block img:hover::after {
+  opacity: 1;
+}
